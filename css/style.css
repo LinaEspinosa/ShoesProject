@@ -1,0 +1,12 @@
+:root{
+    --clrPrimary:#000000;
+    --fonts:'Barlow', sans-serif;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: var(--fonts);
+}
+
