@@ -9,6 +9,10 @@
     --fonts: 'Barlow', sans-serif;
 }
 
+
+html{
+    font-size:1.15vw;
+}
 * {
     margin: 0;
     padding: 0;
@@ -16,6 +20,8 @@
     font-family: var(--fonts);
     color: var(--clrWhite);
 }
+
+
 
 .container {
     width:100%;
@@ -25,7 +31,7 @@
 }
 
 .container .aside {
-    width:7rem;
+    width:7.9rem;
     background-color: var(--clrGray);
     display: flex;
     flex-direction: column;
@@ -49,7 +55,7 @@
 }
 
 .container .aside .text-vector {
-    font-size: .8rem;
+    font-size: 1.1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -68,51 +74,52 @@
     position: relative;
 }
 
-.container .content .img-shoes img {
+.container .content .img-shoes {
     display: flex;
     justify-content: center;
     align-items: center;
+    width:37.81rem;
+    height: 24.9rem;
     position: absolute;
-    width:30rem;
-    height: 30rem;
-    right: 12rem;
-    top: 10rem;
+    right:1.8rem;
+    top: 7rem;
     z-index:2;
-
-    background: url(kindpng_2436787.png);
-    transform: rotate(5deg);
+    /* background: url(kindpng_2436787.png);
+    transform: rotate(-23.25deg); */
 }
+
+
 .container .content .section{
     position:relative;
 }
 .container .content .elipse .elipse1{
     display: flex;
     position: absolute;
-    width: 7rem;
-    height:7rem;
+    width: 9.15rem;
+    height:9.15rem;
     border-radius: 50%;
-    right:6.5rem;
-    top:13rem;
+    right: -2.4rem;
+    top:13.2rem;
     z-index: 2;
 }
 .container .content .elipse .elipse2{
     display: flex;
     position: absolute;
-    width: 7rem;
-    height:7rem;
+    width: 9.15rem;
+    height:9.15rem;
     border-radius: 50%;
-    right:17.7rem;
-    top:22rem;
+    right:13.5rem;
+    bottom:-1rem;
     z-index: 2;
 }
 .container .content .elipse .elipse3{
     position: absolute;
-    width: 13rem;
-    height:13rem;
+    width: 17.4rem;
+    height:16.39rem;
     border-radius:50%;
     background-color: var(--clrElipse3);
-    right: 17.5rem;
-    top: 3.5rem;
+    right: 14rem;
+    top: 4rem;
     z-index:1;
 }
 
@@ -133,13 +140,13 @@
     text-decoration: none;
     padding: 0 2rem;
     font-weight: 600;
-    font-size: 1rem;
+    font-size: .94rem;
 
 }
 
 .container .content .section .title {
-    font-size: 10rem;
-    margin-top: 3rem;
+    font-size: 10.37rem;
+    margin-top: 7rem;
     font-weight: 900;
     font-style: italic;
 
@@ -148,25 +155,24 @@
 .container .content .section .subtitle {
     font-style: italic;
     font-weight: 500;
-    font-size: 1.7rem;
-    letter-spacing: 0.15em;
+    font-size: 2.5rem;
     color: #CCC8C8;
-    margin-bottom: 1.3rem;
+    margin-bottom: 3rem;
 }
 
 .container .content .section .price {
     font-style: italic;
     font-weight: 500;
-    font-size: 1.3rem;
-    line-height: 3.4rem;
+    font-size: 2.82rem;
+
 
 }
 
 .container .content .section .description {
-    width: 21.5rem;
+    width: 33.88rem;
     font-weight: 500;
-    font-size: .7rem;
-    line-height: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.38rem;
     letter-spacing: 0.05em;
     opacity: 0.8;
     margin-top: 1rem;
@@ -174,10 +180,13 @@
 }
 
 .container .content .section .button{
+    display:flex;
+    justify-content: center;
+    align-items: center;
     background-color:var(--clrBtn);
     padding:.5rem 1rem;
     color:var(--clrPrimary);
-    font-size:.7rem;
+    font-size:.94rem;
     font-weight: 600;
     border-radius: .5rem;
     margin-top:2rem;
