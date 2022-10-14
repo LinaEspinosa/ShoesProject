@@ -1,12 +1,186 @@
-:root{
-    --clrPrimary:#000000;
-    --fonts:'Barlow', sans-serif;
+:root {
+    --clrPrimary: #000000;
+    --clrWhite: #ffffff;
+    --clrGray: #a1a2a3;
+    --clrDarkGray: #1A1A1A;
+    --clrGray-D: #CCC8C8;
+    --clrElipse3:#131313;
+    --clrBtn:#A1A2A3;
+    --fonts: 'Barlow', sans-serif;
 }
 
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: var(--fonts);
+    color: var(--clrWhite);
 }
 
+.container {
+    width:100%;
+    min-height: 100vh;
+    background-color: var(--clrPrimary);
+    display: flex;
+}
+
+.container .aside {
+    width:7rem;
+    background-color: var(--clrGray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+
+}
+
+.container .aside .vector {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:3rem;
+    height:1rem;
+    position:absolute;
+    top:3rem;
+    left:2rem
+
+
+}
+
+.container .aside .text-vector {
+    font-size: .8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-orientation: upright;
+    letter-spacing: 1.25em;
+    color: var(--clrDarkGray);
+    transform: rotate(0deg); 
+    writing-mode: vertical-rl;
+    text-orientation: unset;
+}
+
+.container .content {
+    width: 100%;
+    max-height: 100vh;
+    padding: 4rem;
+    position: relative;
+}
+
+.container .content .img-shoes img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width:30rem;
+    height: 30rem;
+    right: 12rem;
+    top: 10rem;
+    z-index:2;
+
+    background: url(kindpng_2436787.png);
+    transform: rotate(5deg);
+}
+.container .content .section{
+    position:relative;
+}
+.container .content .elipse .elipse1{
+    display: flex;
+    position: absolute;
+    width: 7rem;
+    height:7rem;
+    border-radius: 50%;
+    right:6.5rem;
+    top:13rem;
+    z-index: 2;
+}
+.container .content .elipse .elipse2{
+    display: flex;
+    position: absolute;
+    width: 7rem;
+    height:7rem;
+    border-radius: 50%;
+    right:17.7rem;
+    top:22rem;
+    z-index: 2;
+}
+.container .content .elipse .elipse3{
+    position: absolute;
+    width: 13rem;
+    height:13rem;
+    border-radius:50%;
+    background-color: var(--clrElipse3);
+    right: 17.5rem;
+    top: 3.5rem;
+    z-index:1;
+}
+
+
+.container .content .header .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 4.2rem; */
+
+}
+
+.container .content .header .menu ul li {
+    display: inline-block;
+}
+
+.container .content .header .menu ul li a {
+    text-decoration: none;
+    padding: 0 2rem;
+    font-weight: 600;
+    font-size: 1rem;
+
+}
+
+.container .content .section .title {
+    font-size: 10rem;
+    margin-top: 3rem;
+    font-weight: 900;
+    font-style: italic;
+
+}
+
+.container .content .section .subtitle {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 1.7rem;
+    letter-spacing: 0.15em;
+    color: #CCC8C8;
+    margin-bottom: 1.3rem;
+}
+
+.container .content .section .price {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 1.3rem;
+    line-height: 3.4rem;
+
+}
+
+.container .content .section .description {
+    width: 21.5rem;
+    font-weight: 500;
+    font-size: .7rem;
+    line-height: 1rem;
+    letter-spacing: 0.05em;
+    opacity: 0.8;
+    margin-top: 1rem;
+
+}
+
+.container .content .section .button{
+    background-color:var(--clrBtn);
+    padding:.5rem 1rem;
+    color:var(--clrPrimary);
+    font-size:.7rem;
+    font-weight: 600;
+    border-radius: .5rem;
+    margin-top:2rem;
+    margin-left: .5rem;
+    border: none;
+}
