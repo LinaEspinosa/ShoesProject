@@ -74,6 +74,11 @@ html{
     position: relative;
 }
 
+
+
+.container .content .section{
+    position:relative;
+}
 .container .content .img-shoes {
     display: flex;
     justify-content: center;
@@ -87,10 +92,10 @@ html{
     /* background: url(kindpng_2436787.png);
     transform: rotate(-23.25deg); */
 }
-
-
-.container .content .section{
-    position:relative;
+.container .content .shadow {
+    position: absolute; 
+    right:-2rem;
+    bottom:-9rem;
 }
 .container .content .elipse .elipse1{
     display: flex;
